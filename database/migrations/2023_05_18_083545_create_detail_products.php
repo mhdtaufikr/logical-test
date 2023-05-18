@@ -19,7 +19,6 @@ class CreateDetailProducts extends Migration
             $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
             $table->text('name');
             $table->text('description');
-            $table->string('stock');
             $table->integer('price');
             $table->integer('quantity');
             $table->string('origin'); // Menambahkan kolom 'origin'
