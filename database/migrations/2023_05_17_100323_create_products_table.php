@@ -17,9 +17,6 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->unsignedInteger('user_id');
             $table->string('name');
-            $table->string('sku');
-            $table->integer('price');
-            $table->integer('quantity');
             $table->timestamps();
             
             $table->foreign('user_id')
